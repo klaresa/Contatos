@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:id="@+id/relativeLayout"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/nameEditText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/telLinearLayout"
+                android:layout_marginRight="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/telEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Telefone 1"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/salvar"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addTel"
+        android:src="@drawable/ic_add_black_24dp"/>
+
+</RelativeLayout>
