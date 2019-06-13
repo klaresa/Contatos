@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/rootLinear"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,6 +32,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/contactLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -38,13 +40,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Douglas" />
+            android:text="Douglas"
+            android:id="@+id/nameTextView"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:text="Teleeeee" />
+            android:text="Teleeeee"
+            android:id="@+id/telTextView"/>
 
     </LinearLayout>
 
@@ -53,7 +57,6 @@
         android:layout_height="2dp"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-
         android:background="?android:attr/listDivider" />
 
 </LinearLayout>
